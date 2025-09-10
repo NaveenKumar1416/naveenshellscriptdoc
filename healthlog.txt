@@ -1,0 +1,93 @@
+print the system date and time
+Wed Sep 10 03:53:15 UTC 2025
+print the uptime
+up 3 hours, 1 minute
+
+Usage:
+ top [options]
+
+Options:
+ -b, --batch-mode                run in non-interactive batch mode
+ -c, --cmdline-toggle            reverse last remembered 'c' state
+ -d, --delay =SECS [.TENTHS]     iterative delay as SECS [.TENTHS]
+ -E, --scale-summary-mem =SCALE  set mem as: k,m,g,t,p,e for SCALE
+ -e, --scale-task-mem =SCALE     set mem with: k,m,g,t,p for SCALE
+ -H, --threads-show              show tasks plus all their threads
+ -i, --idle-toggle               reverse last remembered 'i' state
+ -n, --iterations =NUMBER        exit on maximum iterations NUMBER
+ -O, --list-fields               output all field names, then exit
+ -o, --sort-override =FIELD      force sorting on this named FIELD
+ -p, --pid =PIDLIST              monitor only the tasks in PIDLIST
+ -S, --accum-time-toggle         reverse last remembered 'S' state
+ -s, --secure-mode               run with secure mode restrictions
+ -U, --filter-any-user =USER     show only processes owned by USER
+ -u, --filter-only-euser =USER   show only processes owned by USER
+ -w, --width [=COLUMNS]          change print width [,use COLUMNS]
+ -1, --single-cpu-toggle         reverse last remembered '1' state
+
+ -h, --help                      display this help text, then exit
+ -V, --version                   output version information & exit
+
+For more details see top(1).
+               total        used        free      shared  buff/cache   available
+Mem:            3832         539        3184           3         246        3292
+Swap:           1024           0        1024
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         238G   76G  163G  32% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.4G  954G   1% /
+none            1.9G   72K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.7M  1.9G   1% /init
+none            1.9G  840K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\             238G   76G  163G  32% /mnt/c
+snapfuse         74M   74M     0 100% /snap/core22/2111
+snapfuse        141M  141M     0 100% /snap/docker/3265
+snapfuse         51M   51M     0 100% /snap/snapd/25202
+tmpfs           1.9G   16K  1.9G   1% /run/user/1007
+nginx is working 
+print the system date and time
+Wed Sep 10 10:03:24 UTC 2025
+print the uptime
+up 3 hours, 10 minutes
+print the CPU load
+ 0.00, 0.00, 0.00
+print the memory usage
+               total        used        free      shared  buff/cache   available
+Mem:            3832         566        3155           3         248        3266
+Swap:           1024           0        1024
+print the disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         238G   76G  163G  32% /usr/lib/wsl/drivers
+/dev/sdd       1007G  2.4G  954G   1% /
+none            1.9G   76K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.7M  1.9G   1% /init
+none            1.9G  840K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\             238G   76G  163G  32% /mnt/c
+snapfuse         74M   74M     0 100% /snap/core22/2111
+snapfuse        141M  141M     0 100% /snap/docker/3265
+snapfuse         51M   51M     0 100% /snap/snapd/25202
+tmpfs           1.9G   16K  1.9G   1% /run/user/1007
+print top 5 memory consuming processes
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         387  0.0  1.8 2268548 73268 ?       Ssl  09:40   0:01 dockerd --group docker --exec-root=/run/snap.docker --data-root=/var/snap/docker/common/var-lib-docker --pidfile=/run/snap.docker/docker.pid --config-file=/var/snap/docker/3265/config/daemon.json
+root         576  0.1  1.1 2172056 46736 ?       Ssl  09:40   0:02 containerd --config /run/snap.docker/containerd/containerd.toml
+root         190  0.0  0.9 2219064 36896 ?       Ssl  09:40   0:00 /usr/lib/snapd/snapd
+root         222  0.0  0.5 107028 22016 ?        Ssl  09:40   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root          42  0.0  0.4  66820 16608 ?        S<s  09:40   0:00 /usr/lib/systemd/systemd-journald
+check nginx status
+nginx is working
+check ssh status
+ssh is not working
